@@ -1,7 +1,6 @@
 """
 Basic usage examples for SolentraAgent
 """
-
 from solentra import SolentraAgent
 from solentra.tools import MLTools, DataTools, ResearchTools
 import numpy as np
