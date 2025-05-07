@@ -71,6 +71,7 @@ analysis = agent.analyze_data(data, confidence_level=0.95)
 
 ## Advanced Usage
 
+
 ### Multi-Agent Collaboration
 
 ```python
@@ -282,13 +283,16 @@ for paper in papers:
     topics = agent.suggest_related_topics(paper['title'])
 ```
 
+
 ## Best Practices
+
 
 1. **API Key Management**: Store your OpenAI API key securely in environment variables.
 2. **Error Handling**: Implement proper error handling for API calls and tool operations.
 3. **Context Management**: Use the context management features to maintain conversation coherence.
 4. **Resource Cleanup**: Reset context and close connections when done.
 5. **Logging**: Enable logging for debugging and monitoring.
+
 
 ## Notes
 
