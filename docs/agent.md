@@ -46,3 +46,14 @@ agent = SolentraAgent(
     logging_enabled=False           # Enable logging
 )
 ```
+
+### Response Generation
+
+```python
+# Basic response
+response = agent.generate_response("Explain protein folding")
+
+# With context
+agent.learn("topic", "details")
+response = agent.generate_response("What do you know about the topic?")
+```
