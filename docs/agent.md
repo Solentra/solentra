@@ -76,3 +76,11 @@ results = agent.run_experiment(
     iterations=3
 )
 ```
+
+### Data Analysis
+
+```python
+# Analyze experimental data
+data = [1.2, 1.3, 1.1, 1.4, 1.2]
+analysis = agent.analyze_data(data, confidence_level=0.95)
+```
