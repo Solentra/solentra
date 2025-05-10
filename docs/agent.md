@@ -57,3 +57,22 @@ response = agent.generate_response("Explain protein folding")
 agent.learn("topic", "details")
 response = agent.generate_response("What do you know about the topic?")
 ```
+
+### Experiment Management
+
+```python
+# Create experiment protocol
+protocol = agent.create_experiment(
+    steps=["Setup", "Measure", "Analyze"],
+    materials=["Sample A", "Detector"],
+    duration="1 hour",
+    conditions={"temperature": 25}
+)
+
+# Run experiment
+results = agent.run_experiment(
+    protocol=protocol,
+    variables={"concentration": 0.5},
+    iterations=3
+)
+```
