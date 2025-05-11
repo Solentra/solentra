@@ -123,3 +123,18 @@ citation = agent.format_citation(
     doi="10.1234/paper"
 )
 ```
+
+### Multi-Agent Collaboration
+
+```python
+# Create specialized agents
+physicist = SolentraAgent(persona="physicist")
+biologist = SolentraAgent(persona="biologist")
+
+# Collaborate
+discussion = agent.collaborate(
+    other_agent=physicist,
+    prompt="Discuss quantum effects in biology",
+    turns=3
+)
+```
