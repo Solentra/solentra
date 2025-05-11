@@ -99,3 +99,27 @@ plan = agent.plan_research_task(
 agent.update_task_progress(["task-1"])
 ```
 
+### Paper Analysis
+
+```python
+# Analyze research paper
+paper_text = """
+Title: Quantum Effects in Biology
+Abstract: This study investigates quantum phenomena in biological processes.
+Keywords: quantum biology, coherence
+"""
+metadata = agent.analyze_paper(paper_text)
+```
+
+### Citation Management
+
+```python
+# Format citation
+citation = agent.format_citation(
+    authors=["Smith, J"],
+    title="Study Title",
+    journal="Journal Name",
+    year=2023,
+    doi="10.1234/paper"
+)
+```
