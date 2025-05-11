@@ -84,3 +84,18 @@ results = agent.run_experiment(
 data = [1.2, 1.3, 1.1, 1.4, 1.2]
 analysis = agent.analyze_data(data, confidence_level=0.95)
 ```
+
+### Research Task Planning
+
+```python
+# Create research plan
+plan = agent.plan_research_task(
+    objective="Study enzyme kinetics",
+    subtasks=["Literature review", "Data collection"],
+    dependencies={"Data collection": ["Literature review"]}
+)
+
+# Update progress
+agent.update_task_progress(["task-1"])
+```
+
