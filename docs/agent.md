@@ -185,3 +185,17 @@ scheduled = agent.schedule_tweet(
 # Analyze engagement
 metrics = agent.analyze_tweet_engagement(tweet['id'])
 ```
+
+## Advanced Features
+
+### Custom Personas
+
+```python
+# Create custom persona
+agent = SolentraAgent(
+    agent_name="Quantum Physicist",
+    persona="physicist",
+    temperature=0.7,
+    max_tokens=200
+)
+```
