@@ -138,3 +138,30 @@ discussion = agent.collaborate(
     turns=3
 )
 ```
+
+### Context Management
+
+```python
+# Reset conversation context
+agent.reset_context()
+
+# Export context
+context = agent.export_context()
+
+# Learn and recall information
+agent.learn("topic", "details")
+info = agent.recall("topic")
+```
+
+### Text Processing
+
+```python
+# Summarize text
+summary = agent.summarize("Long text to summarize...")
+
+# Extract key points
+key_points = agent.extract_key_points("Text to analyze...")
+
+# Suggest related topics
+topics = agent.suggest_related_topics("quantum computing")
+```
