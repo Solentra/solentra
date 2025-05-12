@@ -165,3 +165,23 @@ key_points = agent.extract_key_points("Text to analyze...")
 # Suggest related topics
 topics = agent.suggest_related_topics("quantum computing")
 ```
+
+### Social Media Integration
+
+```python
+# Post tweet
+tweet = agent.post_tweet(
+    "Research update: New findings in quantum biology!",
+    media_paths=["results.png"]
+)
+
+# Schedule tweet
+future = datetime.now() + timedelta(days=1)
+scheduled = agent.schedule_tweet(
+    "Join our seminar tomorrow!",
+    scheduled_time=future
+)
+
+# Analyze engagement
+metrics = agent.analyze_tweet_engagement(tweet['id'])
+```
