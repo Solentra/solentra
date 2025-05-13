@@ -219,3 +219,39 @@ analysis = agent.analyze_hashtag_performance("#science")
 # Analyze audience demographics
 demographics = agent.analyze_audience_demographics()
 ```
+
+## Best Practices
+
+1. **API Key Management**: Store your OpenAI API key securely in environment variables.
+2. **Error Handling**: Implement proper error handling for API calls and tool operations.
+3. **Context Management**: Use the context management features to maintain conversation coherence.
+4. **Resource Cleanup**: Reset context and close connections when done.
+5. **Logging**: Enable logging for debugging and monitoring.
+
+## Troubleshooting
+
+### Common Issues
+
+1. **API Key Errors**: Ensure your OpenAI API key is valid and properly configured.
+2. **Rate Limiting**: Implement exponential backoff for API rate limits.
+3. **Memory Issues**: Monitor context size and reset when necessary.
+4. **Tool Errors**: Check tool configurations and dependencies.
+
+### Debugging
+
+```python
+# Enable logging
+agent = SolentraAgent(logging_enabled=True)
+
+# Check tool status
+print(agent.tools_enabled)
+print(agent.social is not None)
+```
+
+## Contributing
+
+Contributions are welcome! Please read our contributing guidelines and submit pull requests to our GitHub repository.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
