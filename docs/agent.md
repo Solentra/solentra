@@ -199,3 +199,23 @@ agent = SolentraAgent(
     max_tokens=200
 )
 ```
+
+### Experiment History
+
+```python
+# Get experiment history
+history = agent.get_experiment_history()
+```
+
+### Social Media Analytics
+
+```python
+# Get tweet history
+tweets = agent.get_tweet_history(count=10)
+
+# Analyze hashtag performance
+analysis = agent.analyze_hashtag_performance("#science")
+
+# Analyze audience demographics
+demographics = agent.analyze_audience_demographics()
+```
