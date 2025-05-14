@@ -23,3 +23,24 @@ twitter_config = {
 
 agent = SolentraAgent(twitter_config=twitter_config)
 ```
+
+## Twitter Features
+
+### Posting Tweets
+
+```python
+# Basic tweet
+tweet = agent.post_tweet("Research update: New findings in quantum biology!")
+
+# Tweet with media
+tweet_with_media = agent.post_tweet(
+    "Check out our latest results!",
+    media_paths=["results_graph.png"]
+)
+
+# Tweet with hashtags
+tweet_with_hashtags = agent.post_tweet(
+    "Exciting quantum biology results! #Science #Research",
+    hashtags=["quantum", "biology"]
+)
+```
