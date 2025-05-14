@@ -44,3 +44,17 @@ tweet_with_hashtags = agent.post_tweet(
     hashtags=["quantum", "biology"]
 )
 ```
+
+### Scheduling Tweets
+
+```python
+from datetime import datetime, timedelta
+
+# Schedule future tweet
+future = datetime.now() + timedelta(days=1)
+scheduled = agent.schedule_tweet(
+    "Join our seminar tomorrow!",
+    scheduled_time=future,
+    hashtags=["seminar", "science"]
+)
+```
