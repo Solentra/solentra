@@ -58,3 +58,25 @@ scheduled = agent.schedule_tweet(
     hashtags=["seminar", "science"]
 )
 ```
+
+### Tweet History
+
+```python
+# Get recent tweets
+tweets = agent.get_tweet_history(count=10)
+
+# Analyze specific tweet
+tweet = tweets[0]
+metrics = agent.analyze_tweet_engagement(tweet['id'])
+```
+
+### Engagement Analysis
+
+```python
+# Analyze tweet engagement
+metrics = agent.analyze_tweet_engagement("tweet_id")
+print(f"Likes: {metrics['likes']}")
+print(f"Retweets: {metrics['retweets']}")
+print(f"Replies: {metrics['replies']}")
+print(f"Impressions: {metrics['impressions']}")
+```
