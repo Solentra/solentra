@@ -80,3 +80,23 @@ print(f"Retweets: {metrics['retweets']}")
 print(f"Replies: {metrics['replies']}")
 print(f"Impressions: {metrics['impressions']}")
 ```
+
+### Hashtag Analysis
+
+```python
+# Analyze hashtag performance
+analysis = agent.analyze_hashtag_performance("#science")
+print(f"Tweet count: {analysis['tweet_count']}")
+print(f"Engagement rate: {analysis['engagement_rate']}")
+print(f"Reach: {analysis['reach']}")
+```
+
+### Audience Analysis
+
+```python
+# Analyze audience demographics
+demographics = agent.analyze_audience_demographics()
+print(f"Followers: {demographics['followers_count']}")
+print(f"Demographics: {demographics['demographics']}")
+print(f"Interests: {demographics['interests']}")
+```
