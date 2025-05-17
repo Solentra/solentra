@@ -23,3 +23,24 @@ data = MLTools.prepare_data(
     random_state=42
 )
 ```
+
+### train_model
+
+```python
+from sklearn.ensemble import RandomForestClassifier
+
+# Train model with hyperparameter tuning
+model = RandomForestClassifier()
+param_grid = {
+    'n_estimators': [100, 200],
+    'max_depth': [10, 20]
+}
+
+training = MLTools.train_model(
+    model=model,
+    X_train=data['X_train'],
+    y_train=data['y_train'],
+    param_grid=param_grid,
+    cv=5
+)
+```
