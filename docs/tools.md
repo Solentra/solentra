@@ -44,3 +44,15 @@ training = MLTools.train_model(
     cv=5
 )
 ```
+
+### evaluate_model
+
+```python
+# Evaluate model performance
+metrics = MLTools.evaluate_model(
+    model=training['model'],
+    X_test=data['X_test'],
+    y_test=data['y_test'],
+    task_type="classification"
+)
+```
