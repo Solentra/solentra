@@ -45,7 +45,7 @@ setup(
             "ipython>=7.0.0",
         ]
     },
-    author="Solentra Team",
+    author="Solentra",
     author_email="solentrasol@gmail.com",
     description="A powerful Python package for creating science-themed AI agents",
     long_description=open("README.md").read(),
