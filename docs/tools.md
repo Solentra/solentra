@@ -56,3 +56,45 @@ metrics = MLTools.evaluate_model(
     task_type="classification"
 )
 ```
+
+## DataTools
+
+The `DataTools` class provides utilities for data management and quality control.
+
+### validate_dataset
+
+```python
+from solentra.tools import DataTools
+import pandas as pd
+
+# Create sample dataset
+data = pd.DataFrame({
+    'A': [1, 2, 2, 3, None],
+    'B': ['x', 'y', 'y', 'z', 'z'],
+    'C': [1.1, 2.2, 2.2, 3.3, 4.4]
+})
+
+# Validate dataset
+rules = {
+    'dtypes': {
+        'A': 'float64',
+        'B': 'object',
+        'C': 'float64'
+    },
+    'required_columns': ['A', 'B', 'C']
+}
+
+validation = DataTools.validate_dataset(data, rules)
+```
+
+### clean_dataset
+
+```python
+# Clean dataset
+operations = [
+    {'type': 'remove_duplicates'},
+    {'type': 'fill_missing', 'method': 'mean'}
+]
+
+cleaned = DataTools.clean_dataset(data, operations)
+```
