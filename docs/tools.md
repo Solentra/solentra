@@ -98,3 +98,97 @@ operations = [
 
 cleaned = DataTools.clean_dataset(data, operations)
 ```
+
+## ResearchTools
+
+The `ResearchTools` class provides utilities for research paper analysis and literature review.
+
+### parse_pdf
+
+```python
+from solentra.tools import ResearchTools
+
+# Extract text and metadata from PDF
+paper_data = ResearchTools.parse_pdf('quantum_paper.pdf')
+```
+
+### search_arxiv
+
+```python
+# Search ArXiv for papers
+papers = ResearchTools.search_arxiv(
+    query="quantum computing",
+    max_results=5,
+    sort_by="relevance"
+)
+```
+
+## CollaborationTools
+
+The `CollaborationTools` class provides utilities for collaboration and documentation.
+
+### init_git_repo
+
+```python
+from solentra.tools import CollaborationTools
+
+# Initialize Git repository
+repo = CollaborationTools.init_git_repo(
+    path="research_project",
+    remote_url="https://github.com/username/repo.git"
+)
+```
+
+### create_jupyter_notebook
+
+```python
+# Create Jupyter notebook
+cells = [
+    {
+        'cell_type': 'markdown',
+        'source': '# Research Analysis'
+    },
+    {
+        'cell_type': 'code',
+        'source': 'import numpy as np\nimport pandas as pd'
+    }
+]
+
+notebook = CollaborationTools.create_jupyter_notebook(
+    cells=cells,
+    output_path="analysis.ipynb",
+    metadata={'author': 'Research Team'}
+)
+```
+
+## Best Practices
+
+1. **Data Validation**: Always validate data before processing
+2. **Error Handling**: Implement proper error handling
+3. **Documentation**: Document tool usage and parameters
+4. **Version Control**: Use Git for collaboration
+5. **Testing**: Write tests for tool functionality
+6. **Performance**: Monitor tool performance
+7. **Security**: Handle sensitive data appropriately
+8. **Compatibility**: Check tool compatibility
+9. **Updates**: Keep tools up to date
+10. **Logging**: Enable logging for debugging
+
+## Error Handling
+
+```python
+try:
+    result = MLTools.train_model(model, X_train, y_train)
+except ValueError as e:
+    print(f"Invalid input: {e}")
+except Exception as e:
+    print(f"Unexpected error: {e}")
+```
+
+## Notes
+
+- Some tools require additional dependencies
+- Check tool documentation for specific requirements
+- Monitor resource usage for large datasets
+- Implement proper error recovery
+- Keep tools updated for best performance
