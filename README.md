@@ -4,22 +4,40 @@ A powerful Python package for creating science-themed AI agents with advanced re
 
 ## Features
 
-- **Core AI**
+- **Core AI & Agent Capabilities**
   - Specialized agent personas (physicist, biologist, etc.)
   - Context-aware conversation management
   - Multi-agent collaboration capabilities
   - Async processing for complex tasks
   - Model training and evaluation
+  - Custom persona creation and management
+  - Experiment history tracking
+  - Advanced context management
 
-- **Research Tools**
+- **Research & Experimentation Tools**
   - Structured research task planning
   - Experiment design and management
-  - Scientific paper analysis
+  - Scientific paper analysis and parsing
   - Citation handling and formatting
   - Data cleaning and preprocessing
+  - ArXiv paper search integration
+  - PDF parsing and analysis
+  - Literature review automation
+
+- **Data Science & ML Tools**
+  - Data validation and cleaning
+  - Model training and evaluation
+  - Hyperparameter tuning
+  - Performance metrics analysis
+  - Dataset preparation and management
+  - Jupyter notebook integration
+  - Git repository management
 
 - **Social Integration**
-  - Twitter research updates
+  - Twitter research updates and engagement
   - Media sharing capabilities
+  - Content calendar management
   - Engagement analytics
-  - Impact assessment tools
+  - Hashtag performance tracking
+  - Audience demographics analysis
+  - Tweet scheduling and automation
