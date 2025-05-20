@@ -41,3 +41,25 @@ A powerful Python package for creating science-themed AI agents with advanced re
   - Hashtag performance tracking
   - Audience demographics analysis
   - Tweet scheduling and automation
+
+## Installation
+
+### From PyPI (Recommended)
+
+```bash
+pip install solentra
+```
+
+### From Source
+
+```bash
+git clone https://github.com/solentra/solentra.git
+cd solentra
+pip install -e .
+```
+
+### Development Installation
+
+```bash
+pip install solentra[dev]
+```
