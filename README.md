@@ -63,3 +63,35 @@ pip install -e .
 ```bash
 pip install solentra[dev]
 ```
+
+## Quick Start
+
+```python
+from solentra import SolentraAgent
+
+# Initialize agent
+agent = SolentraAgent(
+    agent_name="Research Scientist",
+    model_name="solentra-70b",
+    tools_enabled=True
+)
+
+# Create and run an experiment
+protocol = agent.create_experiment(
+    steps=["Sample preparation", "Data collection"],
+    materials=["Reagent A", "Equipment B"],
+    duration="2 hours",
+    conditions={"temperature": 25}
+)
+
+results = agent.run_experiment(
+    protocol=protocol,
+    variables={"concentration": 0.5},
+    iterations=3
+)
+
+# Analyze results
+analysis = agent.analyze_data(
+    [r['variables']['concentration'] for r in results['results']]
+)
+```
