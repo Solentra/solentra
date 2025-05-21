@@ -95,3 +95,38 @@ analysis = agent.analyze_data(
     [r['variables']['concentration'] for r in results['results']]
 )
 ```
+
+## Documentation
+
+For detailed documentation, visit our [documentation site](https://solentra.ai/docs) or explore the following guides:
+
+- [Agent Documentation](docs/agent.md) - Comprehensive guide to SolentraAgent features and usage
+- [Tools Documentation](docs/tools.md) - Detailed information about research and ML tools
+- [Social Media Integration](docs/social.md) - Guide to Twitter integration and social features
+- [Examples](docs/examples.md) - Code examples and use cases
+
+### Key Documentation Topics
+
+1. **Agent Setup and Configuration**
+   - Agent initialization and customization
+   - Persona management
+   - Context handling
+   - Error handling and debugging
+
+2. **Research Tools**
+   - Experiment management
+   - Paper analysis
+   - Citation formatting
+   - Data validation and cleaning
+
+3. **Machine Learning**
+   - Model training and evaluation
+   - Data preparation
+   - Performance analysis
+   - Hyperparameter optimization
+
+4. **Social Media**
+   - Twitter integration
+   - Content management
+   - Analytics and engagement
+   - Best practices
