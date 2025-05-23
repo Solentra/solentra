@@ -106,3 +106,10 @@ def analyze_data(
     """
     pass
 ```
+
+### Documentation
+
+- Use Markdown for all documentation files
+- Follow the existing documentation structure in the `docs/` directory
+- Include code examples where appropriate
+- Keep documentation up to date with code changes
