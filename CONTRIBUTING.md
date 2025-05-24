@@ -113,3 +113,19 @@ def analyze_data(
 - Follow the existing documentation structure in the `docs/` directory
 - Include code examples where appropriate
 - Keep documentation up to date with code changes
+
+### Testing
+
+- Write unit tests for all new features
+- Maintain or improve test coverage
+- Use pytest for testing
+- Include both positive and negative test cases
+
+Example test:
+```python
+def test_analyze_data():
+    data = [1.0, 2.0, 3.0, 4.0, 5.0]
+    result = analyze_data(data)
+    assert "mean" in result
+    assert result["mean"] == 3.0
+```
