@@ -129,3 +129,16 @@ def test_analyze_data():
     assert "mean" in result
     assert result["mean"] == 3.0
 ```
+
+## Pull Request Process
+
+1. Update the README.md and documentation if needed
+2. Add tests for new features
+3. Ensure all tests pass:
+   ```bash
+   pytest
+   ```
+4. Update the changelog if necessary
+5. Request review from at least one maintainer
+6. Address any feedback or requested changes
+7. Once approved, a maintainer will merge your PR
