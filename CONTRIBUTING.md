@@ -142,3 +142,26 @@ def test_analyze_data():
 5. Request review from at least one maintainer
 6. Address any feedback or requested changes
 7. Once approved, a maintainer will merge your PR
+
+## Feature Requests and Bug Reports
+
+### Feature Requests
+
+1. Check existing issues to avoid duplicates
+2. Use the feature request template
+3. Provide a clear description of the feature
+4. Explain the use case and benefits
+5. Include any relevant examples
+
+### Bug Reports
+
+1. Check existing issues to avoid duplicates
+2. Use the bug report template
+3. Include:
+   - Clear description of the bug
+   - Steps to reproduce
+   - Expected behavior
+   - Actual behavior
+   - Environment details
+   - Any relevant logs or screenshots
+
