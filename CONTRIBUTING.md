@@ -165,3 +165,24 @@ def test_analyze_data():
    - Environment details
    - Any relevant logs or screenshots
 
+## Development Guidelines
+
+### Adding New Features
+
+1. **Agent Features**
+   - Follow the existing agent architecture
+   - Implement proper error handling
+   - Add appropriate logging
+   - Update agent documentation
+
+2. **Tools**
+   - Create new tool classes in appropriate modules
+   - Implement proper validation
+   - Add comprehensive documentation
+   - Include usage examples
+
+3. **Social Integration**
+   - Follow API best practices
+   - Implement rate limiting
+   - Add proper error handling
+   - Update social media documentation
