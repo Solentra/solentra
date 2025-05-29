@@ -186,3 +186,35 @@ def test_analyze_data():
    - Implement rate limiting
    - Add proper error handling
    - Update social media documentation
+
+### Documentation Updates
+
+When updating documentation:
+
+1. Update relevant files in `docs/`:
+   - `agent.md` for agent-related changes
+   - `tools.md` for tool-related changes
+   - `social.md` for social media features
+   - `examples.md` for new examples
+
+2. Follow the existing documentation style
+3. Include code examples
+4. Update any affected README sections
+
+## Release Process
+
+1. Update version numbers
+2. Update changelog
+3. Create release notes
+4. Tag the release
+5. Update documentation
+
+## Questions and Support
+
+- Open an issue for questions
+- Join our community discussions
+- Contact maintainers for urgent issues
+
+## License
+
+By contributing to Solentra, you agree that your contributions will be licensed under the project's MIT License. 
